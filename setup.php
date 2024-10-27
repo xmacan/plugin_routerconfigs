@@ -353,7 +353,7 @@ function AddDeviceTypes() {
 	AddDeviceType('Cisco IOS', 'username:', 'password:', 'copy run tftp', 'show version', 'y', '', 'on','');
 	AddDeviceType('Cisco CatOS', 'username:', 'password:', 'copy config tftp', '', 'y', 'on', '', '');
 	AddDeviceType('Cisco Nexus', 'Username:', 'Password:', 'copy running-config tftp://%SERVER%/%FILE% vrf management', 'show version', '', '', '', '');
-	AddDeviceType('HP Comware', 'username:', 'password:', 'startup-configuration to %SERVER% %FILE%', '', '', '', '', 'on');
+	AddDeviceType('HP Comware', 'username:', 'password:', 'startup-configuration to %SERVER% %FILE%', 'display version', '', '', '', 'on');
 	AddDeviceType('Dell Switch', 'User', 'Password', 'copy running-config tftp://%SERVER%/%FILE% vrf management', 'show version', 'y', '', '', '', 'Are you sure you want to start');
 }
 
